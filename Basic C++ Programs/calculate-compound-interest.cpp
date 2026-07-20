@@ -2,10 +2,13 @@
 using namespace std;
 
 int main() {
-  int p, r, t;
-  cin >> p >> r >> t;
-
-  int ci = 
-  
-  return 0;
+    double p, r, t;
+    cout << "Enter Principle Amt, Rate and Time = ";
+    cin >> p >> r >> t;
+    
+    double a = p * ((pow((1 + r / 100), t)));
+    double CI = a - p;
+    
+    cout << "Compound Interest is = " << CI << endl;
+    return 0;
 }
